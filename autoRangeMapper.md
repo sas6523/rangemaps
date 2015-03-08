@@ -164,3 +164,4 @@ for (i in 1:length(speciesCount)){
 ## Results  
 This script took about 8 minutes to complete on an Intel second gen Corei7 with 10gb RAM, and created 1231 plots.  
 ![Range Map](Aphredoderus_sayanus_plot1.png)
+![Range Map](Etheostoma_brevispinum_plot1.png)

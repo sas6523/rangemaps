@@ -26,7 +26,7 @@ trim <- function (x) {
 The next function is our cleanData function:  
 Its job is to clean the data set so that outliers are removed, and gps coordinates are properly formed. Lastly, we clean and trim the IndividualCount Variable. This will later be summed to get a total collections count. If you wish to edit this script for your own state, you must change the bounds to represent your own state.  
 
-```{r, cleanData, echo=TRUE, eval=FALSE}
+```{r cleanData, echo=TRUE, eval=FALSE}
 
 cleanData <- function(name) {
         species <- name
@@ -45,6 +45,7 @@ cleanData <- function(name) {
         # Repair latitude where -lat
         data.sub$lat <- abs(data.sub$lat)
         # Remove ouliers that were incorrectly geolabeled. These values represent the NS and EW bounds of NC 
+        # Change these coordinates if you wish to apply this script to your own state
         data.sub <- data.sub[data.sub$lon < -75,]
         data.sub <- data.sub[data.sub$lon > -84.5,]
         data.sub <- data.sub[data.sub$lat < 36.6,]

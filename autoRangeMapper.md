@@ -69,7 +69,7 @@ cleanData <- function(name) {
 
 ## Plotting the data:  
 
-In order to plot the data, many solutions were attempted. We finally landed on using `r library(ggplot2)` to get and draw polygons for both the state and for counties. If you wish to edit this for your own state, you will need to adjust the function call `r states_map <- map_data("county","north carolina")` to reflect your state.  
+In order to plot the data, many solutions were attempted. We finally landed on using `library(ggplot2)` to get and draw polygons for both the state and for counties. If you wish to edit this for your own state, you will need to adjust the function call `states_map <- map_data("county","north carolina")` to reflect your state.  
 The script will create a folder in your working directory called "maps". This folder will then be populated by the maps created in the script, and named by their corresponding scientific names. 
 
 ```{r plotting, echo=TRUE, eval=FALSE}
